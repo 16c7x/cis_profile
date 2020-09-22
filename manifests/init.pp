@@ -4,5 +4,7 @@ class cis_profile {
     time_servers  => ['time1.google.com', 'time1.google.com'],
     profile_type  => 'server',
     allow_users   => ['centos'],
+    firewall_package => 'firewalld'
+    server_level_1 => 
   }
 }
