@@ -3,6 +3,7 @@ class cis_profile (
 Array[String]                           $workstation_level_1     = [],
 Enum['firewall', 'firewalld']           $firewall_package,
 ){
+    notify { $firewall_package: }
     class {'::secure_linux_cis':
     time_servers  => ['time1.google.com', 'time1.google.com'],
     profile_type  => 'server',
