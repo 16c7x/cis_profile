@@ -7,7 +7,7 @@ defaults:
 hierarchy:
 
   - name: 'node'
-    path: "nodes/%{::trusted.certname}.yaml"
+    path: "nodes/%{::fqdn}.yaml"
 
   - name: 'common'
     path: 'common.yaml'
