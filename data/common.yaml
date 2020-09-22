@@ -1,5 +1,5 @@
-  secure_linux_cis::firewall_package: firewalld
-  secure_linux_cis::workstation_level_1:
+cis_profile::firewall_package: firewalld
+cis_profile::workstation_level_1:
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_1
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_3
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_4
@@ -186,7 +186,7 @@
     - secure_linux_cis::distribution::rhel8::cis_6_2_19
     - secure_linux_cis::distribution::rhel8::cis_6_2_20
   
-  secure_linux_cis::workstation_level_2:
+  cis_profile::workstation_level_2:
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_2
     - secure_linux_cis::distribution::rhel8::cis_1_1_6
     - secure_linux_cis::distribution::rhel8::cis_1_1_7
@@ -234,7 +234,7 @@
     # - secure_linux_cis::distribution::rhel8::cis_5_2_17 # TODO: research
     - secure_linux_cis::distribution::rhel8::cis_6_1_1
   
-  secure_linux_cis::server_level_1:
+  cis_profile::server_level_1:
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_1
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_3
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_4
@@ -426,7 +426,7 @@
     - secure_linux_cis::distribution::rhel8::cis_6_2_19
     - secure_linux_cis::distribution::rhel8::cis_6_2_20
   
-  secure_linux_cis::server_level_2:
+  cis_profile::server_level_2:
     - secure_linux_cis::distribution::rhel8::cis_1_1_1_2
     - secure_linux_cis::distribution::rhel8::cis_1_1_6
     - secure_linux_cis::distribution::rhel8::cis_1_1_7
