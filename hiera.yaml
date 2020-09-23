@@ -10,7 +10,7 @@ hierarchy:
     path: "nodes/%{::trusted.certname}.yaml"
 
   - name: 'environment'
-    path: "environment/%{::environment}.yaml"
+    path: "environment/%{::env}.yaml"
 
   - name: 'common'
     path: 'common.yaml'
