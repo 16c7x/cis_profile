@@ -1,3 +1,9 @@
+# This file contains all the CIS tests for RHEL8 server
+# & workstation level 1 & 2.
+# You can add the cis_profile::exclude_rules: key in here
+# to list tests you want to exclude globally. Or to be more
+# specific use hiera.
+---
 lookup_options:
   cis_profile::exclude_rules:
     merge: deep
