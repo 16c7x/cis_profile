@@ -1,3 +1,7 @@
+lookup_options:
+  cis_profile::exclude_rules:
+    merge: deep
+
 cis_profile::firewall_package: firewalld
 cis_profile::workstation_level_1:
   - secure_linux_cis::distribution::rhel8::cis_1_1_1_1

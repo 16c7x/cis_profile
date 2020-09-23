@@ -1,8 +1,5 @@
 ---
 version: 5
-lookup_options:
-  cis_profile::exclude_rules:
-    merge: deep
 
 defaults:
   datadir: 'data'
