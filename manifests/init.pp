@@ -6,7 +6,7 @@ class cis_profile (
   Array[String]                           $exclude_rules           = [],
 ){
 
-    notify { $exclude_rules: :}
+    notify { $exclude_rules: }
     class {'::secure_linux_cis':
     time_servers     => ['time1.google.com', 'time1.google.com'],
     profile_type     => 'server',
