@@ -9,5 +9,8 @@ hierarchy:
   - name: 'node'
     path: "nodes/%{::trusted.certname}.yaml"
 
+  - name: 'environment'
+    path: "environment/%{::environment}.yaml"
+
   - name: 'common'
     path: 'common.yaml'
