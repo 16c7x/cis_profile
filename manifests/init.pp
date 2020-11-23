@@ -10,7 +10,6 @@ class cis_profile (
   Enum['firewall', 'firewalld']           $firewall_package,
   Enum['1', '2']                          $enforcement_level       = '1',
   Array[String]                           $server_level_1          = [],
-  Array[String]                           $server_level_2          = [],
   Array[String]                           $exclude_rules           = [],
 ){
   class {'::secure_linux_cis':
@@ -19,7 +18,6 @@ class cis_profile (
     allow_users      => ['centos'],
     firewall_package => $firewall_package,
     server_level_1   => $server_level_1 ,
-    server_level_2   => $server_level_2 ,
     exclude_rules    => $exclude_rules,
   }
 }
