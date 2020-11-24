@@ -20,5 +20,5 @@ class cis_profile (
     server_level_1   => $server_level_1 ,
     exclude_rules    => $exclude_rules,
   }
-  notice($server_level_1)
+  notify { $server_level_1: }
 }
