@@ -8,7 +8,10 @@ lookup_options:
   cis_profile::exclude_rules:
     merge: deep
 
-cis_profile::firewall_package: firewalld
+# 2.2.12 Ensure Samba is not enabled (Scored)
+# Excluded to allow company wide file share system.
+cis_profile::exclude_rules:
+  - secure_linux_cis::distribution::centos7::cis_2_2_12
 cis_profile::server_level_1:
   - secure_linux_cis::distribution::centos7::cis_2_2_13
   - secure_linux_cis::distribution::centos7::cis_2_2_12
