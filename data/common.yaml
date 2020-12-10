@@ -6,7 +6,7 @@
 ---
 lookup_options:
   cis_profile::exclude_rules:
-    merge: deep
+    merge: unique
 
 # 2.2.12 Ensure Samba is not enabled (Scored)
 # Excluded to allow company wide file share system.
