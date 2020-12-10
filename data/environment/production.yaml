@@ -1,2 +1,4 @@
-# Somewhere to put exceptions for the development environment
-# cis_profile::exclude_rules:
+# 5.2.4 Ensure SSH X11 forwarding is disabled (Scored)
+# Enabled in development for debugging.
+cis_profile::exclude_rules:
+  - secure_linux_cis::distribution::centos7::cis_5_2_4
